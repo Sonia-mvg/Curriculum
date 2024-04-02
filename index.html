@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tabla y Formulario</h1>
+    </header>
+
+    <!-- tabla de servicios -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Servicio 1</td>
+                <td>100.000</td>
+                <td>Categoria 1</td>
+            </tr>
+            <tr>
+                <td>Servicio 2</td>
+                <td>200.000</td>
+                <td>Categoria 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br /><br />
+
+    <!-- formulario para solicitar información -->
+    <form action="enviar.php" method="post">
+        <label for="nombre">Nombre</label>
+        <br>
+        <input class="form-item" type="text" name="nombre" id="nombre" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input class="form-item" type="email" name="email" id="email" required>
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <br>
+        <textarea class="form-item" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br /><br />
+
+    <footer>
+        <a href="https://programando.cird.org.py/login/index.php">Enlace a sitio web externo</a>
+    </footer>
+    
+</body>
+</html>
