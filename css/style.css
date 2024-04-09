@@ -17,7 +17,7 @@ p.text {
     width: 100%;
     min-height: 300px;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .h2{
@@ -38,7 +38,7 @@ header {
     align-items: center;
     background-color: #f4f4f4; 
     text-align: center;
-    height: 60px;
+    height: 80px;
     color: #2b2b2b;
 }
 
@@ -48,6 +48,10 @@ header {
     font-style: italic;
     font-weight: 500;
     margin-left: 30px;
+}
+.animacion-titulo {
+    opacity: 1;
+    animation: aparecer 3s ease-in-out;
 }
 
 /* ------ Menu de Navegación ------*/
@@ -93,8 +97,6 @@ header {
 
 /* ------ Contenido ------ */
 
-/* Inicio */
-
 
 /* Sobre mi */
 section.sobre-mi {
@@ -122,6 +124,12 @@ section.sobre-mi .contenedor-img img {
     max-width: 100%; 
     height: auto;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Habilidades */
+.progress {
+    height: 20px;
+    margin: 10px 0;
 }
 
 
@@ -184,4 +192,39 @@ footer {
     text-align: center;
     background-color: #f0a102;
     padding: 10px 0;
+}
+
+.iconos-footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.icon-footer {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.icon-footer a span i {
+    color: #cac9c8;
+    text-decoration: none;
+}
+
+.icon-footer a span i:hover {
+    color: #747474;
+}
+
+
+/* ------ Animaciones ------ */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
