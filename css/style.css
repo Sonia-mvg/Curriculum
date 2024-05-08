@@ -88,6 +88,8 @@ header {
 
 .menu li a.active {
     background-color: #d3d3d3;
+    border-bottom: 2px solid #f0a102;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .menu li a.disabled {
@@ -150,10 +152,11 @@ label {
 
 input[type="text"], input[type="email"] {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #b8b7b7;
 }
 
 .form-item:focus{
@@ -164,10 +167,11 @@ input[type="text"], input[type="email"] {
 
 textarea {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #b8b7b7;
 }
 input[type="submit"] {
     width: 100%;
@@ -181,6 +185,10 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #7eb3c1;
+}
+
+.box_danger {
+    border: 1px solid red;
 }
 
 
