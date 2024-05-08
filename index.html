@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2>¡Bienvenido/a a mi espacio digital</h2>
+                    <h2>¡Bienvenido/a a mi espacio digital!</h2>
                     <p class="text">Me complace darte la bienvenida a mi sitio web, donde puedes explorar mi trayectoria como desarrolladora web Full Stack MERN. Aquí, encontrarás información detallada sobre mis habilidades, proyectos destacados y mi pasión por la creación de soluciones innovadoras.</p>
                     <p class="text">Te invito a navegar por mi portafolio y descubrir los proyectos en los que he trabajado. Cada uno de ellos refleja mi dedicación a la calidad y la atención al detalle.</p>
                 </div>
@@ -65,25 +65,25 @@
 
                     <div class="progress-container">
                         <div class="progress">
-                            <div class="progress-bar" style="width: 30%; background-color: #579348;">MERN</div>
+                            <div class="progress-bar" data-porcentaje="20" data-color="#579348">MERN</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%; background-color: #98cffc;">MVC</div>
+                            <div class="progress-bar" data-porcentaje="90" data-color="#98cffc">MVC</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 85%; background-color: #ffd369;">PHP</div>
+                            <div class="progress-bar" data-porcentaje="90" data-color="#ffd369">PHP</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%; background-color: #7188e6;">JavaScript</div>
+                            <div class="progress-bar" data-porcentaje="70" data-color="#7188e6">JavaScript</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%; background-color: #f58b54;">jQuery</div>
+                            <div class="progress-bar" data-porcentaje="80" data-color="#f58b54">jQuery</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%; background-color: #f68de5;">Bootstrap</div>
+                            <div class="progress-bar" data-porcentaje="70" data-color="#f68de5">Bootstrap</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 65%; background-color: #e3e3e3;">MySQL</div>
+                            <div class="progress-bar" data-porcentaje="65" data-color="#e3e3e3">MySQL</div>
                         </div>
                     </div>
                 </div>
@@ -98,18 +98,18 @@
                 <div class="col-md-8">
                     <h2 class="text-center">Contacto</h2>
                     <p class="text-center">No dudes en ponerte en contacto conmigo si tienes alguna pregunta o si estás interesado/a en colaborar en un proyecto emocionante.</p>
-                    <form action="enviar.php" method="post">
+                    <form id="contacto_form" action="enviar.php" method="post">
                         <label for="nombre">Nombre</label>
                         <br>
-                        <input class="form-item" type="text" name="nombre" id="nombre" required>
+                        <input class="form-item" type="text" name="nombre" id="nombre">
                         <br>
                         <label for="email">Email</label>
                         <br>
-                        <input class="form-item" type="email" name="email" id="email" required>
+                        <input class="form-item" type="email" name="email" id="email">
                         <br>
                         <label for="mensaje">Mensaje</label>
                         <br>
-                        <textarea class="form-item" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                        <textarea class="form-item" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                         <br>
                         <input type="submit" value="Enviar">
                     </form>
@@ -139,5 +139,6 @@
         <p>© Mi Curriculum - Sonia Vera - 2024 </p>
     </footer>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
