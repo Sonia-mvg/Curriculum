@@ -3,16 +3,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // AGREGAR CLASE 'ACTIVE' AL LINK ACTIVO DEL MENU
-    let menu_links = document.querySelectorAll('.menu li a');
-    menu_links.forEach( function(link) {
-        link.addEventListener('click', function() {
-            
-            menu_links.forEach(function(otherLink) {
-                otherLink.classList.remove('active');// remueve la clase 'active' de todos los links
-            });
-            link.classList.add('active'); // agrega la clase 'active' al link seleccionado
-        });
-    });
+    const sections  = document.querySelectorAll('section');
+    const nav_links = document.querySelectorAll('.menu li a');
+
+    // Función para actualizar el enlace activo
+    function actualizar_activo_menu() {
+
+        let index = sections.length;
+
+        while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        nav_links.forEach((link) => link.classList.remove('active'));
+        nav_links[index].classList.add('active');
+    }
+
+    // Escuchar el evento scroll
+    window.addEventListener('scroll', actualizar_activo_menu);
 
 
     // FORMULARIO DE CONTACTO - VALIDACIONES
